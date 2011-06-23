@@ -3,7 +3,7 @@
 Plugin Name: Ackuna Language Translation Plugin
 Plugin URI: http://www.ackuna.com/wordpress
 Description: Allows your users to translate your blog into many different languages. The button is added to the top of every post.
-Version: 1.0
+Version: 1.1
 Author: Ackuna
 Author URI: http://www.ackuna.com/
 License: GPL2
