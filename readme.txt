@@ -21,7 +21,7 @@ Ackuna supports over 50 languages.
 1. Activate the plugin through the 'Plugins' menu in WordPress
 1. If your website is not in English, you must open ackuna.php and change the line "var $ackuna_src = 'en';" to the correct language. 
 e.g. For a Spanish page, change the line to "var $ackuna_src = 'es';". For a full list of usable languages and codes, 
-[click here](http://code.google.com/apis/language/translate/v1/reference.html#LangNameArray). Available languages include: 
+[click here](http://code.google.com/apis/language/translate/v1/reference.html#LangNameArray "Google Translate language codes"). Available languages include: 
 
 * Arabic
 * Brazilian Portuguese
