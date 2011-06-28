@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /*
 Plugin Name: Ackuna Language Translation Plugin
 Plugin URI: http://www.ackuna.com/wordpress
