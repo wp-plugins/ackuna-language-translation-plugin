@@ -41,6 +41,7 @@ class AckunaWidget {
 	// Constructor
 	function AckunaWidget (){
 		add_filter('the_content', array(&$this, 'codeToContent'));
+		add_filter('get_the_excerpt', array(&$this, 'ackunaExcerptTrim'));
 	}
 	
 	function codeToContent ($content){  
@@ -55,12 +56,11 @@ class AckunaWidget {
 		}
 		
 		// Add the link to the content.
-		$link  = urlencode(get_permalink());
-		return $this->getAckunaCode($link).$content;
+		return $this->getAckunaCode() . $content;
 	}
 	
 	// Get the actual button code.
-	function getAckunaCode ($link) {
+	function getAckunaCode () {
 		$ackuna_code	= '<div style="clear: both; display: block; height: 21px; margin: 5px 0; overflow: hidden;">';
 		$ackuna_code	.= '<div style="clear: both; float: right; width: auto;">';
 		$ackuna_code	.= '<div class="ackuna">';
@@ -82,28 +82,9 @@ class AckunaWidget {
         return $ackuna_code;
 	}
 	
-	function Ackuna_doposts ($content) {  
-		for ($i = 0; $i < 10; $i++){
-			$content .= $this->Ackuna_postit($i);
-		}
-		return $content;
+	function ackunaExcerptTrim ($text) {
+		return str_replace('Translatorvar ackuna_src = "en";', '', $text);
 	}
-	
-	function Ackuna_postit ($i) {
-		add_filter('the_content', array(&$this, 'codeToContent'));
-		$content = $this->codeToContent($i);
-		
-		$cut	= explode("|", $content);
-		$post	= $cut[0];
-		$link	= $cut[1]; 
-		return content . "<br />" . $link;
-	}
-}
-
-add_filter('get_the_excerpt', 'ackunaExcerptTrim');
-
-function ackunaExcerptTrim ($text) {
-    return str_replace('Translatorvar ackuna_src = "en";', '', $text);
 }
 
 $ackuna &= new AckunaWidget();
