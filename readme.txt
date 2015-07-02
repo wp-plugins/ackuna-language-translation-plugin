@@ -1,68 +1,26 @@
 === Ackuna Blog Translator ===
 Contributors: Ackuna
 Tags: translation, translator, babelfish, ackuna, free, website, blog, translate, google translate, promt, freetranslations, freetranslation
-Tested up to: 3.1.3
-Stable tag: 2.5
+Tested up to: 4.2.2
+Stable tag: trunk
 
 Allows your users to translate your blog into many different languages. The button is added to the top of every post.
 
 == Description ==
 
-A free **translation** button provided by [Ackuna](http://www.ackuna.com/ "free translation") allowing visitors to **translate** 
-your website into over 50 languages. Ackuna is powered by Google Translate and combines all it's translation functionality into one 
-small, easy to use button. Once installed, the button will appear at the top of every post on the main page, as well as at the top 
-of the individual posts.
+A free **translation** button provided by [Ackuna](http://ackuna.com/ "free app translation") allowing visitors to **translate** 
+your website into 90 languages. Ackuna is powered by Google Translate and combines all it's translation functionality into one 
+small, easy to use button. Once installed, the button will appear at the top of the individual posts.
 
-Ackuna supports over 50 languages.
+Ackuna supports over 90 languages.
 
 == Installation ==
 
 1. Upload ackuna-language-translation-plugin to the /wp-content/plugins/ directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. If your website is not in English, you must open ackuna.php and change the line "var $ackuna_src = 'en';" to the correct language. 
-e.g. For a Spanish page, change the line to "var $ackuna_src = 'es';". For a full list of usable languages and codes, 
-[click here](http://code.google.com/apis/language/translate/v1/reference.html#LangNameArray "Google Translate language codes"). Available languages include: 
-
-* Arabic
-* Brazilian Portuguese
-* Bulgarian
-* Catalan
-* Chinese
-* Chinese-simp
-* Chinese-trad
-* Croatian
-* Czech
-* Danish
-* Dutch
-* English
-* Filipino
-* Finnish
-* French
-* German
-* Greek
-* Hebrew
-* Hindi
-* Hungarian
-* Icelandic
-* Indonesian
-* Italian
-* Japanese
-* Korean
-* Latvian
-* Lithuanian
-* Norwegian
-* Polish
-* Portuguese
-* Romanian
-* Russian
-* Serbian
-* Slovak
-* Slovenian
-* Spanish
-* Swedish
-* Ukranian
-* Welsh
-* Vietnamese
+1. Activate the plugin through the 'Plugins' menu in WordPress.
+1. If your website is not in English, go to the settings page and select the language from the dropdown menu.
+1. If selecting a language has no effect, you may want to check the "use valid jQuery" checkbox. (Caution: may cause conflicts with other plugins or themes.)
+1. If you are using any caching plugins, such as WP Super Cache, you will need to clear your cached pages after updating your Translate This settings.
 
 == Frequently Asked Questions ==
 
